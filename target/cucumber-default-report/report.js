@@ -1,69 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/membership.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/userStory12.feature");
 formatter.feature({
-  "name": "As an admin user should be able to add different",
-  "description": "  memberships under qualifications",
+  "name": "As an admin user should be able to add memberships to any employee",
+  "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Membership"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "adding different membership",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "I login with \"Admin\" and \"Hum@nhrm123\"",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I navigate to Qualification under Admin",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I go to qulification",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "I able to add different \"\u003cmembership\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "membership"
-      ]
-    },
-    {
-      "cells": [
-        "Quality Assurance"
-      ]
-    },
-    {
-      "cells": [
-        "Retro Fitness"
-      ]
-    },
-    {
-      "cells": [
-        "Capital Zoo"
-      ]
+      "name": "@UserStory12"
     }
   ]
 });
 formatter.scenario({
-  "name": "adding different membership",
+  "name": "adding multiple dependents",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Membership"
+      "name": "@UserStory12"
     }
   ]
 });
@@ -81,150 +33,56 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to Qualification under Admin",
+  "name": "I navigate to Employee List",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.steps.MembershipSteps.i_navigate_to_Qualification_under_Admin()"
+  "location": "com.steps.AddingDependentSteps.i_navigate_to_Employee_List()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I go to qulification",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.steps.MembershipSteps.i_go_to_qulification()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I able to add different \"Quality Assurance\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.steps.MembershipSteps.i_able_to_add_different(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded0.png", "adding different membership");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "adding different membership",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Membership"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I login with \"Admin\" and \"Hum@nhrm123\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.steps.AddingDependentSteps.i_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Qualification under Admin",
+  "name": "I search employee with name \"Salman Khan\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.steps.MembershipSteps.i_navigate_to_Qualification_under_Admin()"
+  "location": "com.steps.AddingDependentSteps.i_search_employee_with_name(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I go to qulification",
+  "name": "I click on Memberships",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.steps.MembershipSteps.i_go_to_qulification()"
+  "location": "com.steps.UserStory12Steps.i_click_on_Memberships()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I able to add different \"Retro Fitness\"",
+  "name": "I able to add different membership informations",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.steps.MembershipSteps.i_able_to_add_different(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded1.png", "adding different membership");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "adding different membership",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Membership"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I login with \"Admin\" and \"Hum@nhrm123\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.steps.AddingDependentSteps.i_login_with_and(java.lang.String,java.lang.String)"
+  "location": "com.steps.UserStory12Steps.i_able_to_add_different_membership_informations()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to Qualification under Admin",
+  "name": "I verify successfully added informations",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.steps.MembershipSteps.i_navigate_to_Qualification_under_Admin()"
+  "location": "com.steps.UserStory12Steps.i_verify_successfully_added_informations()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "I go to qulification",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.steps.MembershipSteps.i_go_to_qulification()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I able to add different \"Capital Zoo\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.steps.MembershipSteps.i_able_to_add_different(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded2.png", "adding different membership");
+formatter.embedding("image/png", "embedded0.png", "adding multiple dependents");
 formatter.after({
   "status": "passed"
 });

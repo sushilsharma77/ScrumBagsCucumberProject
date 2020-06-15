@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun=false, 
 		monochrome = true
 		,strict=true
-		,tags= "@Membership"
+		,tags= "@UserStory12"
 		,plugin= {
 				"pretty",
 				"json:target/cucumber.json",

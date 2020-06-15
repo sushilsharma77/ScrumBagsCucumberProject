@@ -7,6 +7,7 @@ import com.pages.MembershipPageElements;
 import com.pages.PersonalDetailsPageElements;
 import com.pages.ViewDependentsPageElements;
 import com.pages.ViewEmployeePageElements;
+import com.pages.ViewMembershipsPageElements;
 
 //initializes all pages class and stores references in static varibales
 //that will called/used in test classes
@@ -19,6 +20,7 @@ public class PageInitializer extends BaseClass {
 	public static ViewEmployeePageElements viewEmp;
 	public static ViewDependentsPageElements viewDepnd;
 	public static MembershipPageElements addMemShip;
+	public static ViewMembershipsPageElements viewMemShip;
 
 	public static void initialize() {
 		login = new LoginPageElements();
@@ -28,6 +30,7 @@ public class PageInitializer extends BaseClass {
 		viewEmp = new ViewEmployeePageElements();
 		viewDepnd = new ViewDependentsPageElements();
 		addMemShip = new MembershipPageElements();
+		viewMemShip = new ViewMembershipsPageElements();
 
 	}
 }
